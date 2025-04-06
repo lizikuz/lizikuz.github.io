@@ -1,0 +1,132 @@
+
+html { }
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0px;
+  /* padding-left: 19px;
+  padding-top: 19px; */
+}
+
+.ruler {
+  background: justify;
+  color: white;
+  font-family: source code pro, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, Veranda, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  overflow: hidden;
+}
+
+.ruler > div { background: justify; }
+
+.hRule {
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+}
+
+.vRule {
+  position: absolute;
+  min-height: 100%;
+  width: 14px;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+}
+
+.hRule .tickLabel {
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  height: 14px;
+  background-color: white;
+}
+
+.hRule .tickMajor {
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  height: 6px;
+  background-color: white;
+}
+
+.hRule .tickMinor {
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  height: 4px;
+  background-color: white;
+}
+
+.vRule .tickLabel {
+  position: absolute;
+  right: 0px;
+  height: 2px;
+  width: 14px;
+  background-color: white;
+}
+
+.vRule .tickMajor {
+  position: absolute;
+  right: 0px;
+  height: 2px;
+  width: 6px;
+  background-color: white;
+}
+
+.vRule .tickMinor {
+  position: absolute;
+  right: 0px;
+  height: 2px;
+  width: 4px;
+  background-color: white;
+}
+
+.vMouse {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 0px;
+  left: 0;
+  background: rgba(0,0,0,0);
+  border-bottom: 1px dotted;
+  z-index: 11;
+}
+
+.hMouse {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  top: 0;
+  background: rgba(0,0,0,0);
+  border-left: 1px dotted;
+  z-index: 11;
+}
+
+.mousePosBox {
+  height: 16px;
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-family: source code pro;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid rgba(0,0,0,0.5);
+  position: fixed;
+  white-space: no-wrap;
+  display: block;
+  overflow-y: hidden;
+  float: left;
+  text-align: left;
+  left: -50%;
+  top: -50%;
+  padding: 0 2px;
+}

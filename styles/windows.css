@@ -1,0 +1,219 @@
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .mdl_top {
+        position: absolute;
+        background-color: red;
+        left: 4px;
+        right: 4px;
+        height: 4px;
+        top: 0;
+        cursor: n-resize;
+        opacity: 0;
+    }
+    
+    .mdl_bottom {
+        position: absolute;
+        background-color: red;
+        left: 4px;
+        right: 4px;
+        height: 4px;
+        bottom: 0;
+        cursor: s-resize;
+        opacity: 0;
+    }
+    
+    .mdl_left {
+        position: absolute;
+        background-color: red;
+        top: 4px;
+        bottom: 4px;
+        width: 4px;
+        left: 0;
+        cursor: w-resize;
+        opacity: 0;
+    }
+    
+    .mdl_right {
+        position: absolute;
+        background-color: red;
+        top: 4px;
+        bottom: 4px;
+        width: 4px;
+        right: 0;
+        cursor: e-resize;
+        opacity: 0;
+    }
+    
+    .titlebar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 22px;
+        background-color: rgb(64, 64, 65);
+        color: white;
+        border-bottom: 2px solid rgb(64, 64, 65);;
+    }
+    
+    .titlebar_left {
+        position: absolute;
+        left: 0;
+        right: 30px;
+        height: 20px;
+        cursor: move;
+        color: white;
+    }
+    
+    .titlebar_right {
+        position: absolute;
+        width: 20px;
+        right: 0;
+        height: 20px;
+        color: white;
+        cursor: default;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .mdl_top_left {
+        position: absolute;
+        background-color: blue;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        cursor: nw-resize;
+        opacity: 0;
+    }
+    
+    .mdl_top_right {
+        position: absolute;
+        background-color: blue;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 4px;
+        cursor: ne-resize;
+        opacity: 0;
+    }
+    
+    .mdl_bottom_left {
+        position: absolute;
+        background-color: blue;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        cursor: sw-resize;
+        opacity: 0;
+    }
+    
+    .mdl_bottom_right {
+        position: absolute;
+        background-color: blue;
+        bottom: 0;
+        right: 0;
+        width: 4px;
+        height: 4px;
+        cursor: se-resize;
+        opacity: 0;
+    }
+    
+    .titlebar_title {
+        margin: 0px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .mdl_box_body {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 22px;
+        bottom: 0px;
+        overflow: hidden;
+        margin: 0px;
+    }
+
+    .mdl_box_body::-webkit-scrollbar {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .mdl_box_body::-webkit-scrollbar-track {
+        border: 2px solid rgb(64, 64, 65);
+    }
+            
+    .mdl_box_body::-webkit-scrollbar-thumb {
+        background: rgb(64, 64, 65);
+    }
+    .mdl_box_body::-webkit-scrollbar-track-piece {
+        background: lightgray;
+        border-left: 2px solid rgb(64, 64, 65);
+    }
+    
+    .titlebar_right .close {
+        margin: 0px;
+        margin-left: 0px;
+        /* font-weight: bold; */
+        opacity: 1;
+        height: 20px;
+        width: 20px;
+        font-size: 25px;
+        font-style: inherit;
+        color: white;
+        text-shadow: none;
+        text-align: center;
+    }
+    
+    .parent {
+        position: relative;
+        margin: 50px;
+        overflow: hidden;
+        height: 200px;
+        width: 180px;
+        background: #ddd;
+    }
+    
+    .scrollable {
+        overflow-y: scroll;
+        position: absolute;
+        padding: 0 17px 0 0;
+        width: 180px;
+        height: 100%;
+    }
+    
+    .scrollbar {
+        position: absolute;
+        overflow: auto;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background: #444;
+        width: 7px;
+        border-radius: 5px;
+    }
+    
+    .b_scroll {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background: #444;
+        width: 7px;
+        border-radius: 5px;
+        bottom: 0;
+    }
+    
+    .borders1 {
+        border: 2px solid rgb(64, 64, 65);
+    }  

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Events</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="styles/ps.css" type="text/css" rel="stylesheet">
+    <link href="styles/events.css" type="text/css" rel="stylesheet">
+    <link href="styles/ruler.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/windows.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="scripts/jquery.ruler.js"></script>
+    <script src="scripts/modalbox.js"></script>
+
+
+</head>
+
+<body>
+
+    <script>
+        $(function () {
+            console.log(window.screen);
+            $('#field').ruler();
+        });
+    </script>
+
+    <!-- Main window -->
+    <div class="container-fluid frame pr-0">
+        <div class="row mt-1 line light_grey">
+            <div class="col-3">
+                <p>xerox ideology.doc</p>
+            </div>
+            <div class="col-1 offset-8" style="text-align: right;">
+                <div style="margin-right: 10px; height: 25px; align-items: center;">
+                    <img src="images/icons/close-minimize.png" height="55%">
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-1 line">
+            <div class="col-2 mr-1 tab grey" onclick="window.location='index.html'">map <img height="12px" width="auto" src="images/icons/close.png" alt=""></div>
+<!--            <div class="col-2 mr-1 tab grey" onclick="window.location='events.html'">events <img height="12px" width="auto" src="images/icons/close.png" alt=""></div>-->
+            <div class="col-2 mr-1 tab grey light_grey" onclick="window.location='impressum.html'">impressum <img height="12px" width="auto" src="images/icons/close.png" alt=""></div>
+            <div class="col tab grey" style="width: 100%;"></div>
+        </div>
+        <div class="ps-container mt-1 line" style="height: calc(100% - 87px);">
+            <div class="map-container grey" id="field">
+                <div class="bg">
+                    <div class="container">
+                        <div class="title">
+                            <img src="images/logos/Xerox_transform.png" height="100%" width="auto">
+                        </div>
+                        <!-- <div class="scroll-text"> -->
+                            <h2 style="color: black;">Impressum</h2>
+                            <div class="scroll-text">
+                                <!-- <p style="background-color: white;"> -->
+                                    <br>Elena Markus, Nick Förster 
+                                    <br>
+                                    <br>TUM Technische Universität München
+                                    <br>Fakultät für Architektur
+                                    <br>Arcisstr. 21
+                                    <br>D-80333 München
+                                    <br>
+                                    <br>elena.markus@tum.de
+                                    <br>nick.foerster@tum.de
+                                    <br>
+                                    <br>
+                                    <br>PROJECTS
+                                    <br>
+                                    <br>xerox ideology: 6 case studies
+                                    <br>Elena Markus, Nick Foerster &
+                                    <br>
+                                    <br>Hauptbahnhof: Anela Dumonjic, Felix Schroeder, Noémie Schoenfelder
+                                    <br>Alte Akademie: Ferdinand Brunold, Sabine Kees, Teresa Kunkel, Sophie Schwarz
+                                    <br>Sattler Saga: Lorena Cirillo, Julius Grambow, Lena Kirsch, Felix Roettger, Maike Steidler
+                                    <br>Aktivismus Kit: Nora Blattmann, Max Boeringer, Tim Lauer, Leah Maue, Sophie Streibl
+                                    <br>The Seven: Moritz Neumann, Mirko Schuetz, Kyrylo Zhornovyi 
+                                    <br>U-Bahnmusik: Tao Sun, Stefan Ullmann
+                                    <br>
+                                    <br>
+                                    <br>xerox ideology: online edition
+                                    <br>Elena Markus, Nick Foerster &
+                                    <br>
+                                    <br>Hauptbahnhof: Felix Schroeder
+                                    <br>Alte Akademie: Teresa Kunkel, Mirko Schuetz, Maike Steidler
+                                    <br>Sattler Saga: Julius Grambow, Lena Kirsch, Felix Roettger
+                                    <br>Aktivismus Kit: Leah Maue
+                                    <br>The Seven: Mirko Schuetz, Kyrylo Zhornovyi 
+                                    <br>U-Bahnmusik: Lorena Cirillo
+                                    <br>
+                                    <br>
+                                    <br>xerox ideology: praha.pdf
+                                    <br>Elena Markus, Nick Foerster & spolka architects & Vi Per Gallery &
+                                    <br>
+                                    <br>Layout: Mirko Schuetz 
+                                    <br>Monotony: Max Boehringer, Leah Maue, Felix Roettger, Mirko Schuetz, Sophie Streibl
+                                    <br>Utopia: Lorena Cirillo, Julius Grambow, Felix Schroeder, Stefan Ullmann, Kyrylo Zhornovyi
+                                    <br>Everyday: Ferdinand Brunhold, Sabine Kees, Lucia Kolesarova, Teresa Kunkel, Fausto Prezioso, Sophie Schwarz
+                                    <br>Monument: Martin Bumbal, Lena Kirsch, Moritz Neumann, Maike Steidler
+                                    <br>
+                                    <br>Website: Elizaveta Kuznetcova
+                                <!-- </p> -->
+                            </div>
+                            <img src="images/logos/Agentur_Logo.png" width="70%" height="auto">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="right-menu-container" style="background-color: rgb(64, 64, 65);">
+                <div class="mb-1">
+                    <div class="col-6 pl-1 light_grey">
+                        <p style="margin-bottom: 0px;">Kummer Kasten</p>
+                    </div>
+                    <div class="col py-3 px-1 light_grey">
+                        <div class="dark_grey mx-auto my-auto button" onclick="sendEmail();" style="height: 25px; text-align: center;">
+                            <p>Send</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <div class="col-6 pl-1 light_grey">
+                        <p style="margin-bottom: 0px;">Filter</p>
+                    </div>
+                    <div class="col py-3 px-1 light_grey">
+                        <div id="xerox" class="dark_grey mx-auto mb-1 button active_filter"
+                            style="height: 25px; text-align: center;">
+                            <p>Xerox</p>
+                        </div>
+                        <div id="tourist" class="dark_grey mx-auto button mb-1"
+                            style="height: 25px; text-align: center;">
+                            <p>Tourist</p>
+                        </div>
+                        <div id="bavaria" class="dark_grey mx-auto button mb-1"
+                            style="height: 25px; text-align: center;">
+                            <p>Bavaria</p>
+                        </div>
+                        <div class="color_block">
+                            <img id="color_block" width="30%" height="auto" style="
+                            position: relative;
+                            left: 35%;" src="images/icons/color_swatch.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <div class="col-6 pl-1 px-1 light_grey">
+                        <p style="margin-bottom: 0px;">Print</p>
+                    </div>
+                    <div class="col py-3 px-1 light_grey">
+                        <div class="dark_grey mx-auto mb-1 button" onClick="window.open('files/Praha.pdf', '_blank', 'fullscreen=yes'); return false;" style="height: 25px; text-align: center;">
+                            <p>Praha.pdf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1 line light_grey" > <!--style="background-color: rgb(100, 100, 102); height: 25px;"-->
+            <div class="col-3">
+                <p>50 % Dok 277,4 KB /0 Byte MB</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    function sendEmail() 
+    {
+        window.location = "mailto:elena.markus@tum.de,nick.foerster@tum.de";
+    }
+
+    $('#xerox').on('click', function () {
+        $('#color_block').attr("src", "images/icons/color_swatch.png");
+        $('#xerox').addClass("active_filter");
+        $('#tourist').removeClass("active_filter");
+        $('#bavaria').removeClass("active_filter");
+    });
+
+    $('#tourist').on('click', function () {
+        $('#color_block').attr("src", "images/icons/color_swatch_tourist.png");
+        $('#tourist').addClass("active_filter");
+        $('#xerox').removeClass("active_filter");
+        $('#bavaria').removeClass("active_filter");
+    });
+
+    $('#bavaria').on('click', function () {
+        $('#color_block').attr("src", "images/icons/color_swatch_bavaria.png");
+        $('#bavaria').addClass("active_filter");
+        $('#xerox').removeClass("active_filter");
+        $('#tourist').removeClass("active_filter");
+    });
+
+   
+</script>
+
+</html>

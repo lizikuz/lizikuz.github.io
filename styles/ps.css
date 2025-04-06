@@ -1,0 +1,450 @@
+@media (min-width: 300px) and (max-width: 480px) {
+    .list {
+        font-size: 9px;
+    }
+    .banners p {
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 880px) {
+    .list {
+        font-size: 13px;
+    }
+    .banners p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 881px) and (max-width: 1024px) {
+    .list {
+        font-size: 17px;
+    }
+    .banners p {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .list {
+        font-size: 24px;
+    }
+    .banners p {
+        font-size: 30px;
+        /* font-weight: 900; */
+    }
+}
+
+@font-face {
+    font-family: Fira_Code;
+    /* Гарнитура шрифта */
+    src: url(../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+html,
+body {
+    font-family: Fira_Code, sans-serif;
+    font-size: 14px;
+    color: white;
+    height: 99%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(64, 64, 65);
+}
+
+.dark_grey {
+    background-color: rgb(64, 64, 65);
+}
+
+.grey {
+    background-color: rgb(77, 77, 79);
+}
+
+.light_grey {
+    background-color: rgb(100, 100, 102);
+}
+
+.no-padding {
+    padding: 0%;
+}
+
+.frame {
+    height: 100%;
+}
+
+.line {
+    height: 25px;
+}
+
+.tab_lang {
+    height: 25px;
+    width: 100%;
+    top: 3px;
+    position: relative;
+    display: inline-flex;
+}
+
+.tab {
+    height: 25px;
+    width: 100%;
+    top: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(64, 64, 65);
+    color: white;
+    /* -webkit-box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65);
+    -moz-box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65);
+    box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65); */
+}
+
+.active_filter {
+    background-color: rgb(100, 100, 102);
+    color: white;
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgb(64, 64, 65);
+    -moz-box-shadow: inset 0px 0px 0px 3px rgb(64, 64, 65);
+    box-shadow: inset 0px 0px 0px 3px rgb(64, 64, 65);
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat;
+}
+
+
+/* .map img {
+    /* position: relative; 
+    overflow:hidden;
+    width: auto;
+    height: 100%;
+} */
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.part {
+    /* opacity: .2; */
+    z-index: 4;
+}
+
+.part:hover {
+    transition: opacity .2s ease;
+    /* opacity: .5; */
+    cursor: pointer;
+}
+
+.lang_switch {
+    height: 20px;
+    width: 50%;
+    border: none;
+    margin: 2px;
+}
+
+.lang_switch:focus {
+    outline: none;
+    outline: none;
+}
+
+.lang_switch:hover {
+    cursor: pointer;
+}
+
+.back {
+    height: 75%;
+    width: 80%;
+    background-color: rgba(157, 174, 175, 0.7);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    left: 12%;
+    top: 18%;
+}
+
+#back.tourist {
+    background-color: rgb(175, 150, 179);
+}
+
+.map {
+    width: 70%;
+    position: absolute;
+    ;
+    text-align: center;
+    z-index: 3;
+    left: -6%;
+    bottom: 10%;
+    /* max-height: 100%;
+    max-width: 100%;
+    height: 100%; */
+    /* height: auto;85%; */
+    /* border: black 2px solid; */
+    /*    width: 60%;
+    position: absolute;
+    
+    text-align: center;
+    z-index: 3;
+    
+    bottom: 15%;
+    right: 37%;
+    height: auto;
+    /* border: black 2px solid;*/
+}
+
+
+/* div.map > div {
+    position:relative;
+    width:100%;
+    padding-bottom:65%; /* Отношение высоте к ширине
+}
+
+div.map > div > div {
+    position:absolute;
+    width:100%;
+    height:100%;
+} */
+
+#map {
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.map-right-part-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 36%;
+    height: 130%;
+    top: -17%;
+    padding: 0 2%;
+}
+
+path {
+    fill: black;
+    stroke: none;
+    stroke-width: 0;
+    fill-rule: evenodd;
+}
+
+.title {
+    width: 90%;
+    position: relative;
+    flex-basis: 31%;
+}
+
+.title img {
+    /* height: 100%; */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    /* left: -7%; */
+}
+
+.scroll-text {
+    width: 100%;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    overflow-y: auto;
+    line-height: 1.4;
+    flex-basis: 27%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.famous-spot {
+    flex-basis: 15%;
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+
+.famous-spot img {
+    /* position: absolute;
+    left: -4%; */
+    /* height: 100%; */
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+}
+
+.list {
+    width: 100%;
+    color: black;
+    /* font-size: 24px; */
+    /* 1.5em; */
+    line-height: 1;
+    font-weight: 900;
+}
+
+.banners {
+    height: 10%;
+    position: absolute;
+    z-index: 5;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    width: 64%;
+    justify-content: left;
+    padding-top: 2px;
+}
+
+.banners_img {
+    align-items: flex-end;
+    position: relative;
+    height: 100%;
+}
+
+.banners_img img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.building {
+    display: none;
+    pointer-events: none;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+}
+
+.building1 {
+    width: 20%;
+    z-index: 5;
+    left: 13%;
+    top: 12%;
+}
+
+.building2 {
+    width: 32%;
+    z-index: 5;
+    left: 41%;
+    top: 19%;
+}
+
+.building3 {
+    width: 15%;
+    z-index: 5;
+    left: 54%;
+    top: 29%;
+}
+
+.building4 {
+    width: 15%;
+    z-index: 5;
+    left: 63%;
+    top: 60%;
+}
+
+.building5 {
+    width: 9%;
+    z-index: 5;
+    left: 68%;
+    top: 65%;
+}
+
+.building6 {
+    width: 9%;
+    z-index: 5;
+    left: 42%;
+    top: 63%;
+}
+
+.show {
+    display: inline;
+}
+
+.ps-container {
+    display: flex;
+}
+
+.map-container {
+    width: 100%;
+    position: relative;
+}
+
+.right-menu-container {
+    min-width: 140px;
+    padding-left: 2px;
+}
+
+.audio {
+    height: auto;
+    width: 100%;
+    top: 3px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.p {
+    background-color: white;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Fira_Code, sans-serif;
+}
+
+.mySlides {
+    height: 100%;
+    /* width: 80%;
+    display: none; */
+}
+
+.carousel {
+    height: 100%;
+    width: auto;
+    text-align: center;
+    background-color: rgb(77, 77, 79);
+}
+
+.slides_button {
+    background-color: initial;
+}
+
+.pointer_hand {
+    cursor: pointer;
+}
