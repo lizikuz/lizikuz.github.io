@@ -31,15 +31,12 @@
     }
     .banners p {
         font-size: 30px;
-        /* font-weight: 900; */
     }
 }
 
 @font-face {
     font-family: Fira_Code;
-    /* Гарнитура шрифта */
     src: url(../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
-    /* Путь к файлу со шрифтом */
 }
 
 html,
@@ -103,9 +100,7 @@ body {
 .active {
     background-color: rgb(64, 64, 65);
     color: white;
-    /* -webkit-box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65);
-    -moz-box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65);
-    box-shadow:inset 0px 0px 0px 3px rgb(64, 64, 65); */
+
 }
 
 .active_filter {
@@ -123,14 +118,6 @@ body {
     background-repeat: repeat;
 }
 
-
-/* .map img {
-    /* position: relative; 
-    overflow:hidden;
-    width: auto;
-    height: 100%;
-} */
-
 svg {
     position: absolute;
     top: 0;
@@ -140,13 +127,11 @@ svg {
 }
 
 .part {
-    /* opacity: .2; */
     z-index: 4;
 }
 
 .part:hover {
     transition: opacity .2s ease;
-    /* opacity: .5; */
     cursor: pointer;
 }
 
@@ -189,35 +174,7 @@ svg {
     z-index: 3;
     left: -6%;
     bottom: 10%;
-    /* max-height: 100%;
-    max-width: 100%;
-    height: 100%; */
-    /* height: auto;85%; */
-    /* border: black 2px solid; */
-    /*    width: 60%;
-    position: absolute;
-    
-    text-align: center;
-    z-index: 3;
-    
-    bottom: 15%;
-    right: 37%;
-    height: auto;
-    /* border: black 2px solid;*/
 }
-
-
-/* div.map > div {
-    position:relative;
-    width:100%;
-    padding-bottom:65%; /* Отношение высоте к ширине
-}
-
-div.map > div > div {
-    position:absolute;
-    width:100%;
-    height:100%;
-} */
 
 #map {
     border: 2px solid black;
@@ -253,12 +210,10 @@ path {
 }
 
 .title img {
-    /* height: 100%; */
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
-    /* left: -7%; */
 }
 
 .scroll-text {
@@ -292,9 +247,6 @@ path {
 }
 
 .famous-spot img {
-    /* position: absolute;
-    left: -4%; */
-    /* height: 100%; */
     width: 60%;
     height: auto;
     position: absolute;
@@ -302,11 +254,10 @@ path {
     left: -5%;
 }
 
+
 .list {
     width: 100%;
     color: black;
-    /* font-size: 24px; */
-    /* 1.5em; */
     line-height: 1;
     font-weight: 900;
 }
@@ -430,8 +381,6 @@ h5 {
 
 .mySlides {
     height: 100%;
-    /* width: 80%;
-    display: none; */
 }
 
 .carousel {
